@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load('visualization', '1', {'packages':['motionchart']});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', '资源类型');
+        data.addColumn('date', '日期');
+        data.addColumn('number', '总数');
+        data.addColumn('number', '新增数');
+        data.addRows([
+          ['video',new Date (2010,01,17),32984,393],
+          ['video',new Date (2010,01,18),36300,425]
+          ]);
+        var chart = new google.visualization.MotionChart(document.getElementById('chart_div'));
+        chart.draw(data, {width: 600, height:300});
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="chart_div" style="width: 600px; height: 300px;"></div>
+  </body>
+</html>

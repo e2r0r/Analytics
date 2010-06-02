@@ -1,0 +1,1016 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=7">
+<title>ManGo Analytics</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="./images/ga-ltr.css" type="text/css"
+	title="">
+<!--[if IE]><link href="#" /><![endif]-->
+</head>
+
+<body dir="ltr" class="report_body">
+<div id="container">
+<div id="header">
+<div id="main_header">
+<img src="http://www.hunantv.com/source/images/home2009v3/logo_0930.gif" alt="金鹰网首页" style="margin-left: -230px;">
+<p id="logo"><a href="#"></a></p>
+<table id="global_header_nav">
+	<tr>
+		<td><span id="f_email" class="email_address">管理员</span></td>
+		<td>|</td>
+		<td><a href="#"	id="logout">退出</a></td>
+	</tr>
+</table>
+</div>
+<div id="subheader">
+<div id="tlcorner">
+<div id="trcorner">
+<div id="blcorner">
+<div id="brcorner">
+<table id="account_profile_nav" cellspacing="0" cellpadding="0">
+	<tr>
+		<td>
+		<form id="account_profile_selector" action="/analytics/reporting/"
+			method="get">
+		<p id="profile_nav"><input type="hidden" name="reset" value="1">
+		<a class="settings" id="settings_link"
+			href="#">Analytics Settings</a> <label
+			for="profile"> View Reports: </label> <select name="id" id="profile"
+			onchange="this.form.submit()">
+			<option selected value="2">bluker.com/</option>
+		</select></p>
+		</form>
+		</td>
+		<td>
+		<form id="account_selector" name="account_selector"
+			action="/analytics/reporting/" method="get">
+		<p id="account_nav"><label for="account"> My Analytics
+		Accounts: </label> <select name="scid" id="account">
+			<option selected value="6826474">www</option>
+		</select></p>
+		</form>
+		</td>
+	</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="content">
+<div id="main_content"><b class="round_border"> <b
+	class="round_border_layer3"></b> <b class="round_border_layer2"></b> <b
+	class="round_border_layer1"></b> </b>
+<div class="round_border_content main_reporting">
+<table class="report_table">
+	<tr>
+		<td>
+		<div id="ReportContent">
+		<div>
+		<div>
+		<div id="ControlPanel">
+		<div id="report_tools"><b class="controlbar_border"> <b
+			class="controlbar_border_layer3"></b> <b
+			class="controlbar_border_layer2"></b> <b
+			class="controlbar_border_layer1"></b> </b>
+		<div id="controlbar_border_content">
+		<table class="report_menu_left" cellpadding="0" cellspacing="0">
+			<tr>
+				<td id="export_button_item"><a href="#" id="f_export_format"
+					onclick="#"
+					class="button menu"><b><b><b>Export</b></b></b></a></td>
+				<td id="email_button_item"></td>
+			</tr>
+		</table>
+		<table class="report_menu_right" cellpadding="0" cellspacing="0">
+			<tr>
+				<td id="segment_button_label">Advanced Segments:</td>
+				<td id="segment_button_item"><a href="#" id="f_segment_button"
+					onclick="#"
+					class="button menu"> <b><b><b> All Visits </b></b></b> </a></td>
+			</tr>
+		</table>
+		<div class="export_button_options" id="f_export_format_options"
+			style="display: none;">
+		<div id="export_dropbox">
+		<div id="export_dropbox_content">
+		<div id="export_dropbox_data">
+		<div class="export_dropbox_listbox">
+		<ul>
+			<li><a id="pdf_export_format"
+				href="#"
+				onclick="#">
+			PDF </a></li>
+			<li><a id="xml_export_format"
+				href="#"
+				onclick="#">
+			XML </a></li>
+		</ul>
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+		<div class="segment_button_options" id="f_segment_button_options"
+			style="display: none;">
+		<div id="seg_dropbox">
+		<div id="seg_dropbox_content">
+		<div id="seg_dropbox_info">
+		<h1>Advanced Segments</h1>
+		<p>Select up to four segments by which to filter your report</p>
+		<ul>
+			<li><a href="#"
+				onclick="#">
+			Create a new advanced segment </a></li>
+			<li><a href="#" id="f_managesegment_format"
+				onclick="#">
+			Manage your advanced segments </a></li>
+		</ul>
+		</div>
+		<div id="seg_dropbox_data">
+		<div class="seg_dropbox_listbox">
+		<h1>Custom Segments</h1>
+		<ul>
+		</ul>
+		</div>
+		<div class="seg_dropbox_listbox">
+		<h1>Default Segments</h1>
+		<ul>
+			<li><label for="segment_id_-1"> <input type="checkbox"
+				id="segment_id_-1" name="All Visits" value="-1" checked
+				onclick="#">
+			All Visits </label></li>
+			<li><label for="segment_id_-2"> <input type="checkbox"
+				id="segment_id_-2" name="New Visitors" value="-2"
+				onclick="#">
+			New Visitors </label></li>
+			<li><label for="segment_id_-3"> <input type="checkbox"
+				id="segment_id_-3" name="Returning Visitors" value="-3"
+				onclick="#">
+			Returning Visitors </label></li>
+			<li><label for="segment_id_-4"> <input type="checkbox"
+				id="segment_id_-4" name="Paid Search Traffic" value="-4"
+				onclick="#">
+			Paid Search Traffic </label></li>
+			<li><label for="segment_id_-5"> <input type="checkbox"
+				id="segment_id_-5" name="Non-paid Search Traffic" value="-5"
+				onclick="#">
+			Non-paid Search Traffic </label></li>
+			<li><label for="segment_id_-6"> <input type="checkbox"
+				id="segment_id_-6" name="Search Traffic" value="-6"
+				onclick="#">
+			Search Traffic </label></li>
+			<li><label for="segment_id_-7"> <input type="checkbox"
+				id="segment_id_-7" name="Direct Traffic" value="-7"
+				onclick="#">
+			Direct Traffic </label></li>
+			<li><label for="segment_id_-8"> <input type="checkbox"
+				id="segment_id_-8" name="Referral Traffic" value="-8"
+				onclick="#">
+			Referral Traffic </label></li>
+			<li><label for="segment_id_-9"> <input type="checkbox"
+				id="segment_id_-9" name="Visits with Conversions" value="-9"
+				onclick="#">
+			Visits with Conversions </label></li>
+			<li><label for="segment_id_-11"> <input type="checkbox"
+				id="segment_id_-11" name="Visits from iPhones" value="-11"
+				onclick="#">
+			Visits from iPhones </label></li>
+			<li><label for="segment_id_-12"> <input type="checkbox"
+				id="segment_id_-12" name="Non-bounce Visits" value="-12"
+				onclick="#">
+			Non-bounce Visits </label></li>
+		</ul>
+		</div>
+		</div>
+		<div id="seg_dropbox_alert">
+		<p>When selecting multiple segments, Date Range Comparison will
+		revert to only the primary date range.</p>
+		</div>
+		<div id="seg_dropbox_control">
+		<p><input type="submit" id="segment_options_submit"
+			onclick="#"
+			value="Apply"> <a href="#" id="segment_options_cancel"
+			onclick="#">
+		cancel </a></p>
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+		<b class="controlbar_border"> <b class="controlbar_border_layer1"></b>
+		<b class="controlbar_border_layer2"></b> <b
+			class="controlbar_border_layer3"></b> </b></div>
+		<a name="status_message_anchor"></a>
+		<div class="status_message" id="f_message" style="display: none;">
+		<b><b><b><b id="f_message_text"> </b></b></b></b></div>
+		</div>
+		</div>
+		<div>
+		<div id="Breadcrumb" class="breadcrumb"></div>
+		</div>
+		<div>
+		<div id="Title">
+		<div id="report_header">
+		<table cellpadding="0" cellspacing="0" width="100%">
+			<tr>
+				<td width="60%">
+				<div class="title_container">
+				<div class="title_contents">
+				<h1 class="title" title="Dashboard "><span class="name"
+					id="report_title_name"> Dashboard </span></h1>
+				</div>
+				</div>
+				</td>
+				<td>
+				<div class="date_range"><a href="#" id="f_date_range"
+					onclick="#">
+				<b><b><b> <span>
+				<table>
+					<tr>
+						<td style="padding: 3px">
+						<table>
+							<tr>
+								<td class="date_range_display">Dec 20, 2009 - Jan 19, 2010
+								</td>
+							</tr>
+							<tr>
+								<td>
+								<div class="comparison"></div>
+								</td>
+							</tr>
+						</table>
+						</td>
+						<td class="comparison_dropdown">&nbsp;</td>
+					</tr>
+				</table>
+				</span> <span class="comparison_hide">&nbsp;</span> </b></b></b> </a></div>
+				</td>
+			</tr>
+		</table>
+		</div>
+		</div>
+		</div>
+		<div>
+		<div class="date_range_options hidden" id="f_date_range_options">
+		<div id="date_range_tools">
+		<div class="wrapper">
+		<div class="loading" id="f_dateInputLoading"><img
+			src="./images/loading.gif"
+			alt="" width="16" height="16"></div>
+		<div id="f_dateAlert">When comparing two date ranges, only a
+		single advanced segment will be selected</div>
+		<div id="f_dateInputFlash" class="date_controller_flash"></div>
+		<form id="f_dateInputForm" class="date_controller_form" action="none">
+		<dl>
+			<dt>Date Range</dt>
+			<dd class="current"><span id="f_primaryBeginFocus"
+				class="focus_indicator"><input type="text"
+				id="f_primaryBegin" class="date_input"></span> - <span
+				id="f_primaryEndFocus" class="focus_indicator"><input
+				type="text" id="f_primaryEnd" class="date_input"></span></dd>
+			<dt><label for="f_comparisonEnabledCheckbox"> Compare to
+			Past </label> <input type="checkbox" id="f_comparisonEnabledCheckbox">
+			</dt>
+			<dd id="f_comparisonInputs" class="previous"><span
+				id="f_comparisonBeginFocus" class="focus_indicator"><input
+				type="text" id="f_comparisonBegin" class="date_input"></span> - <span
+				id="f_comparisonEndFocus" class="focus_indicator"><input
+				type="text" id="f_comparisonEnd" class="date_input"></span></dd>
+		</dl>
+		<div id="f_dateRangeLengthNotice">Date ranges are different
+		lengths.</div>
+		<div id="f_submitOptions">
+		<p class="date_input_submit"><input type="submit" id="f_apply"
+			value="Apply"> <a href="#" id="f_cancel">cancel</a></p>
+		</div>
+		</form>
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+		<div>
+		<div>
+		<div id="GraphControls" class="graph_options_container">
+		<div class="graph_options_header">
+		<div class="graph_date_options" id="graph_date_options_GraphControls">
+		<dl>
+			<dt>Graph by:</dt>
+			<dd>
+			<div id="view_by_nth_day" class="view_by_nth_day alt"><a
+				href="#" id="gdf_nth_day" class="selected"
+				onclick="#">Day</a>
+			<div id="hover_desc_gdf_nth_day" class="hover_desc_container"
+				style="display: none;">
+			<div class="hover_desc_outerdiv">
+			<div class="hover_desc_innerdiv"><span>Day</span>
+			<div class="hover_desc_pointer">&nbsp;</div>
+			</div>
+			</div>
+			</div>
+			</div>
+			<div id="view_by_nth_week" class="view_by_nth_week "><a
+				href="#" id="gdf_nth_week" class="active"
+				onclick="#">Week</a>
+			<div id="hover_desc_gdf_nth_week" class="hover_desc_container"
+				style="display: none;">
+			<div class="hover_desc_outerdiv">
+			<div class="hover_desc_innerdiv"><span>Week</span>
+			<div class="hover_desc_pointer">&nbsp;</div>
+			</div>
+			</div>
+			</div>
+			</div>
+			<div id="view_by_nth_month" class="view_by_nth_month "><a
+				href="#" id="gdf_nth_month" class="active"
+				onclick="#">Month</a>
+			<div id="hover_desc_gdf_nth_month" class="hover_desc_container"
+				style="display: none;">
+			<div class="hover_desc_outerdiv">
+			<div class="hover_desc_innerdiv"><span>Month</span>
+			<div class="hover_desc_pointer">&nbsp;</div>
+			</div>
+			</div>
+			</div>
+			</div>
+			</dd>
+		</dl>
+		</div>
+		<div id="f_toggle_GraphControls"
+			class="graph_tab_options graph_tab_options_clickable"
+			onclick="#">
+		<b> <b>
+		<div class="legend">
+		<div id="f_GraphControls_legend_primary" class="average ">
+		&nbsp;Visits</div>
+		</div>
+		<div class="legend">
+		<div class="graph_options_toggle site_average hidden"
+			id="f_GraphControls_legend_secondary">Site:&nbsp;Visits</div>
+		</div>
+		<div class="graph_tab_arrow"></div>
+		</b> </b></div>
+		<div id="f_GraphControls_primary_segment_label"
+			class="graph_legend_labels hidden"></div>
+		<div id="f_GraphControls_legend" class="graph_legend_labels hidden">
+		<div class="label line_1">Selected Visits</div>
+		<div class="label line_average">Site Avg.</div>
+		</div>
+		</div>
+		<div id="f_popout_GraphControls" class="graph_options"
+			style="display: none;">
+		<div id="f_graph_mode_selector" class="graph_mode_selector ">
+		<table>
+			<tr>
+				<td class="graph_mode_label">Graph Mode:</td>
+				<td>
+				<table class="graph_mode_list" id="f_mode_list_GraphControls">
+					<tr>
+						<td class="primary">
+						<div><a href="#" class="inactive"
+							onclick="#">
+						One Metric</a></div>
+						</td>
+						<td class="metric_comparison">
+						<div><a href="#" class="active"
+							onclick="#">
+						Compare Two Metrics</a></div>
+						</td>
+						<td class="site_average">
+						<div><a href="#" class="active"
+							onclick="#">
+						Compare to Site</a></div>
+						</td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+		</table>
+		</div>
+		<form action="#" method="get" id="f_option_list_GraphControls"
+			class="graph_option_list primary">
+		<table>
+			<tr>
+				<td class="first">
+				<ul>
+					<li>
+					<div class="graph_option primary selected"><input
+						type="radio" id="graph_primary_option_visits"
+						name="graph_primary_options" checked
+						onclick="#">
+					</div>
+					<div class="graph_option secondary selected"><input
+						type="radio" id="graph_secondary_option_visits"
+						name="graph_secondary_options" checked
+						onclick="#">
+					</div>
+					<label class="graph_option_label" for="graph_primary_option_visits">
+					Visits </label></li>
+					<li>
+					<div class="graph_option primary"><input type="radio"
+						id="graph_primary_option_pageviews" name="graph_primary_options"
+						onclick="#">
+					</div>
+					<div class="graph_option secondary"><input type="radio"
+						id="graph_secondary_option_pageviews"
+						name="graph_secondary_options"
+						onclick="#">
+					</div>
+					<label class="graph_option_label"
+						for="graph_primary_option_pageviews"> Pageviews </label></li>
+					<li>
+					<div class="graph_option primary"><input type="radio"
+						id="graph_primary_option_avg_pageviews"
+						name="graph_primary_options"
+						onclick="#">
+					</div>
+					<div class="graph_option secondary"><input type="radio"
+						id="graph_secondary_option_avg_pageviews"
+						name="graph_secondary_options"
+						onclick="#">
+					</div>
+					<label class="graph_option_label"
+						for="graph_primary_option_avg_pageviews"> Pages/Visit </label></li>
+					<li>
+					<div class="graph_option primary"><input type="radio"
+						id="graph_primary_option_avg_session_time"
+						name="graph_primary_options"
+						onclick="#">
+					</div>
+					<div class="graph_option secondary"><input type="radio"
+						id="graph_secondary_option_avg_session_time"
+						name="graph_secondary_options"
+						onclick="#">
+					</div>
+					<label class="graph_option_label"
+						for="graph_primary_option_avg_session_time"> Avg. Time on
+					Site </label></li>
+					<li>
+					<div class="graph_option primary"><input type="radio"
+						id="graph_primary_option_bounce_rate" name="graph_primary_options"
+						onclick="#">
+					</div>
+					<div class="graph_option secondary"><input type="radio"
+						id="graph_secondary_option_bounce_rate"
+						name="graph_secondary_options"
+						onclick="#">
+					</div>
+					<label class="graph_option_label"
+						for="graph_primary_option_bounce_rate"> Bounce Rate </label></li>
+					<li>
+					<div class="graph_option primary"><input type="radio"
+						id="graph_primary_option_percent_new_visitors"
+						name="graph_primary_options"
+						onclick="#">
+					</div>
+					<div class="graph_option secondary"><input type="radio"
+						id="graph_secondary_option_percent_new_visitors"
+						name="graph_secondary_options"
+						onclick="#">
+					</div>
+					<label class="graph_option_label"
+						for="graph_primary_option_percent_new_visitors"> % New
+					Visits </label></li>
+				</ul>
+				</td>
+			</tr>
+		</table>
+		</form>
+		</div>
+		</div>
+		</div>
+		<div>
+		<div id="Graph">
+		<div class="">
+		<div id="Graph_vis" class="overtime_graph"
+			style="height: 125px; width: 100%;"><iframe src="/table/info?date=20100117" border="0" width="100%"></iframe></div>
+		</div>
+		</div>
+		</div>
+		<div>
+		<div id="AnnotationDrawer" class="annotations">
+		<div id="AnnotationDrawer_wrapper" style="display: none">
+		<div id="AnnotationDrawer_controls" class="annotation_controls">
+		<table class="full_width">
+			<tbody>
+				<tr>
+					<td>Show:&nbsp;<a href="#" onclick="#"
+						class="no_filter button">All</a>&nbsp;|&nbsp;<a href="#"
+						onclick="#">Starred</a></td>
+					<td align="right"><a href="#" onclick="#"
+						class="create_new button">+&nbsp;Create new annotation</a></td>
+				</tr>
+			</tbody>
+		</table>
+		</div>
+		<div id="AnnotationDrawer_content" class="annotations_content">
+		<table id="AnnotationDrawer_list" class="annotation_list">
+			<tbody>
+				<tr class="odd editable">
+					<td class="star">
+					<div class="icon"></div>
+					</td>
+					<td class="date">&nbsp;</td>
+					<td class="text"><span class="access_label"
+						style="display: hidden">
+					<div class="r1">
+					<div class="r2">
+					<div class="r3">private</div>
+					</div>
+					</div>
+					</span><span>&nbsp;</span></td>
+					<td class="action"><a href="#" onclick="#">edit</a></td>
+					<td class="creator">&nbsp;</td>
+				</tr>
+				<tr class="annotation_edit">
+					<td colspan="7" class="table_wrapper">
+					<form action="" onsubmit="return false;">
+					<table>
+						<tbody>
+							<tr>
+								<td class="star">
+								<div class="icon clickable"></div>
+								</td>
+								<td class="date"><input name="date" type="text" size="10">
+								<div class="date_format">mm/dd/yyyy</div>
+								</td>
+								<td class="text_input"><textarea name="text" cols="40"
+									rows="3"></textarea></td>
+								<td class="counter">
+								<div class="annotation_counter"><span></span>/160</div>
+								</td>
+								<td class="visibility_label">Visibility:</td>
+								<td class="access">
+								<div class="access public"><label
+									for="AnnotationDrawer_public_radiobutton" class="clickable"><input
+									type="radio" name="access" class="clickable" value="PUBLIC"
+									id="AnnotationDrawer_public_radiobutton">Shared</label></div>
+								<div class="access private"><label
+									for="AnnotationDrawer_private_radiobutton" class="clickable"><input
+									type="radio" name="access" class="clickable" value="PRIVATE"
+									id="AnnotationDrawer_private_radiobutton">Private</label></div>
+								</td>
+								<td class="buttons"><a class="button save_button"><b><b><b>Save</b></b></b></a>
+								<div class="edit_delete">
+								<div class="spacer">|</div>
+								<a class="cancel_button">Cancel</a>
+								<div class="delete_button_div">
+								<div class="spacer">|</div>
+								<a class="delete_button">Delete</a></div>
+								</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					</form>
+					</td>
+				</tr>
+				<tr class="error" style="display: none">
+					<td colspan="5">An error occured. Please <a
+						href="#">refresh</a> your page
+					and try again.</td>
+				</tr>
+			</tbody>
+			<tbody></tbody>
+		</table>
+		</div>
+		</div>
+		<div class="drawer_button_wrapper">
+		<div id="AnnotationDrawer_drawer_button"
+			class="clickable closed drawer_button">
+		<div class="drawer_button_icon"></div>
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+		<div>
+		<div id="Narrative">
+		<div class="dashboard_intro">
+		<div class="rounder"></div>
+		<h2 class="">Site Usage</h2>
+		</div>
+		</div>
+		</div>
+		<div>
+		<div class="report_section" id="">
+		<div class="subsections">
+		<div class="section section_1">
+		<div>
+		<div class="sparkline">
+		<div id="VisitsSparkline">
+		<div class="visualization">
+		<div class="f_sparkline_outer">
+		<div class="f_sparkline_inner"><img
+			src="https://www.google.com/chart?cht=ls&amp;chs=75x18&amp;chm=B,e6f2fa,0,0.0,0.0&amp;chco=0077cc&amp;chd=s:AAAAAAAAAAAAAAAAA9AAAAAAA99AAAA"
+			alt="" width="75" height="18"></div>
+		</div>
+		</div>
+		</div>
+		<div id="VisitsSummary">
+		<div class="statistic"><span class="primary_value">
+		<ul>
+			<li class="item_value">3</li>
+			<span class="label"> <a
+				href="#"
+				onclick="#">
+			Visits </a> </span>
+		</ul>
+		</span></div>
+		</div>
+		</div>
+		</div>
+		<div>
+		<div class="sparkline">
+		<div id="PageviewsSparkline">
+		<div class="visualization">
+		<div class="f_sparkline_outer">
+		<div class="f_sparkline_inner"><img
+			src="https://www.google.com/chart?cht=ls&amp;chs=75x18&amp;chm=B,e6f2fa,0,0.0,0.0&amp;chco=0077cc&amp;chd=s:AAAAAAAAAAAAAAAAA9AAAAAAA99AAAA"
+			alt="" width="75" height="18"></div>
+		</div>
+		</div>
+		</div>
+		<div id="PageviewsSummary">
+		<div class="statistic"><span class="primary_value">
+		<ul>
+			<li class="item_value">3</li>
+			<span class="label"> <a
+				href="#"
+				onclick="#">
+			Pageviews </a> </span>
+		</ul>
+		</span></div>
+		</div>
+		</div>
+		</div>
+		<div>
+		<div class="sparkline">
+		<div id="AvgPageSparkline">
+		<div class="visualization">
+		<div class="f_sparkline_outer">
+		<div class="f_sparkline_inner"><img
+			src="https://www.google.com/chart?cht=ls&amp;chs=75x18&amp;chm=B,e6f2fa,0,0.0,0.0&amp;chco=0077cc&amp;chd=s:AAAAAAAAAAAAAAAAA9AAAAAAA99AAAA"
+			alt="" width="75" height="18"></div>
+		</div>
+		</div>
+		</div>
+		<div id="AvgPageSummary">
+		<div class="statistic"><span class="primary_value">
+		<ul>
+			<li class="item_value">1.00</li>
+			<span class="label"> <a
+				href="#"
+				onclick="#">
+			Pages/Visit </a> </span>
+		</ul>
+		</span></div>
+		</div>
+		</div>
+		</div>
+		</div>
+		<div class="section section_2">
+		<div>
+		<div class="sparkline">
+		<div id="BounceRateSparkline">
+		<div class="visualization">
+		<div class="f_sparkline_outer">
+		<div class="f_sparkline_inner"><img
+			src="https://www.google.com/chart?cht=ls&amp;chs=75x18&amp;chm=B,e6f2fa,0,0.0,0.0&amp;chco=0077cc&amp;chd=s:AAAAAAAAAAAAAAAAA9AAAAAAA99AAAA"
+			alt="" width="75" height="18"></div>
+		</div>
+		</div>
+		</div>
+		<div id="BounceRateSummary">
+		<div class="statistic"><span class="primary_value">
+		<ul>
+			<li class="item_value">100.00%</li>
+			<span class="label"> <a
+				href="#"
+				onclick="#">
+			Bounce Rate </a> </span>
+		</ul>
+		</span></div>
+		</div>
+		</div>
+		</div>
+		<div>
+		<div class="sparkline">
+		<div id="TimeOnSiteSparkline">
+		<div class="visualization">
+		<div class="f_sparkline_outer">
+		<div class="f_sparkline_inner"><img
+			src="https://www.google.com/chart?cht=ls&amp;chs=75x18&amp;chm=B,e6f2fa,0,0.0,0.0&amp;chco=0077cc&amp;chd=s:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+			alt="" width="75" height="18"></div>
+		</div>
+		</div>
+		</div>
+		<div id="TimeOnSiteSummary">
+		<div class="statistic"><span class="primary_value">
+		<ul>
+			<li class="item_value">00:00:00</li>
+			<span class="label"> <a
+				href="#"
+				onclick="#">
+			Avg. Time on Site </a> </span>
+		</ul>
+		</span></div>
+		</div>
+		</div>
+		</div>
+		<div>
+		<div class="sparkline">
+		<div id="NewVisitsSparkline">
+		<div class="visualization">
+		<div class="f_sparkline_outer">
+		<div class="f_sparkline_inner"><img
+			src=""
+			alt="" width="75" height="18"></div>
+		</div>
+		</div>
+		</div>
+		<div id="NewVisitsSummary">
+		<div class="statistic"><span class="primary	_value">
+		<ul>
+			<li class="item_value">100.00%</li>
+			<span class="label"> <a
+				href="#"
+				onclick="#">
+			% New Visits</a> </span>
+		</ul>
+		</span></div>
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+		<div>
+		<div id="messageBox"></div>
+		<div id="dashboardLayout" class="report_section dashboard">
+		<div class="subsections">
+		<div class="section section_1">
+		<ul class="dashboard_modules" id="f_modules_col_1">
+			<li>
+			<div id="VisitorsOverviewReport1813083106_module" class="legacy">
+			<div class="dashboard_module ">
+			<div class="title_bar"
+				id="VisitorsOverviewReport1813083106_module_title_bar">
+			<div class="rounder"></div>
+			<span id="VisitorsOverviewReport1813083106_module_title">
+			Visitors Overview </span> </div>
+			<div id="VisitorsOverviewReport1813083106">
+			<div class="graph">
+			<div class="loading"><img
+				src="./images/loading.gif"
+				alt="" width="16" height="16"> Loading...</div>
+			</div>
+			</div>
+			<p><b><a
+				id="VisitorsOverviewReport1813083106_module_view_report"
+				href="#"
+				onclick="#">
+			view report</a></b></p>
+			</div>
+			</div>
+			</li>
+			<li>
+			<div id="TrafficSourcesReport100798177_module" class="legacy">
+			<div class="dashboard_module ">
+			<div class="title_bar"
+				id="TrafficSourcesReport100798177_module_title_bar">
+			<div class="rounder"></div>
+			<span id="TrafficSourcesReport100798177_module_title"> Traffic
+			Sources Overview </span></div>
+			<div id="TrafficSourcesReport100798177">
+			<div class="graph">
+			<div class="loading"><img
+				src="./images/loading.gif"
+				alt="" width="16" height="16"> Loading...</div>
+			</div>
+			</div>
+			<p><b><a
+				id="TrafficSourcesReport100798177_module_view_report"
+				href="#"
+				onclick="#">
+			view report</a></b></p>
+			</div>
+			</div>
+			</li>
+			<li id="left_after_pad" style="display: none;"></li>
+		</ul>
+		</div>
+		<div class="section section_2">
+		<ul class="dashboard_modules" id="f_modules_col_2">
+			<li>
+			<div id="GeoMapReport1066475921_module" class="legacy">
+			<div class="dashboard_module ">
+			<div class="title_bar" id="GeoMapReport1066475921_module_title_bar">
+			<div class="rounder"></div>
+			<span id="GeoMapReport1066475921_module_title"> Map Overlay </span> </div>
+			<div id="GeoMapReport1066475921">
+			<div class="graph">
+			<div class="loading"><img
+				src="./images/loading.gif"
+				alt="" width="16" height="16"> Loading...</div>
+			</div>
+			</div>
+			<p><b><a id="GeoMapReport1066475921_module_view_report"
+				href="#"
+				onclick="#">
+			view report</a></b></p>
+			</div>
+			</div>
+			</li>
+			<li>
+			<div id="ContentReport1950953681_module" class="legacy">
+			<div class="dashboard_module ">
+			<div class="title_bar" id="ContentReport1950953681_module_title_bar">
+			<div class="rounder"></div>
+			<span id="ContentReport1950953681_module_title"> Content
+			Overview </span></div>
+			<div id="ContentReport1950953681">
+			<div class="graph">
+			<div class="loading"><img
+				src="./images/loading.gif"
+				alt="" width="16" height="16"> Loading...</div>
+			</div>
+			</div>
+			<p><b><a id="ContentReport1950953681_module_view_report"
+				href="#"
+				onclick="#">
+			view report</a></b></p>
+			</div>
+			</div>
+		</div>
+		</div>
+		</td>
+	</tr>
+</table>
+</div>
+<b class="round_border"> <b class="round_border_layer1"></b> <b
+	class="round_border_layer2"></b> <b class="round_border_layer3"></b> </b></div>
+<div id="main_context">
+<div>
+<div id="report_nav_div">
+<div class="menu-list" id="report_nav"><b class="round_border">
+<b class="round_border_layer3"></b> <b class="round_border_layer2"></b>
+<b class="round_border_layer1"></b> </b>
+<div class="round_border_content">
+<div class="menu-item"><a
+	href="#"
+	onclick="#"
+	class="current" id="dashboard_nav_item">
+<div class="r1">
+<div class="r2">
+<div class="r3">
+<div class="content">
+<div class="icon_wrapper">
+<div class="icon"></div>
+</div>
+Dashboard</div>
+</div>
+</div>
+</div>
+</a>
+<div class="menu-list" id="dashboard_nav_item_items"></div>
+</div>
+<div class="menu-item"><a
+	href="#"
+	onclick="#"
+	class="" id="intelligence_events_nav_item">
+<div class="r1">
+<div class="r2">
+<div class="r3">
+<div class="content">
+<div class="icon_wrapper">
+<div class="icon"></div>
+</div>
+Intelligence&nbsp;<sup class="beta_label small">Beta</sup></div>
+</div>
+</div>
+</div>
+</a></div>
+<div class="menu-item"><a href="#" onclick="#" class="" id="visitors_nav_item">
+<div class="r1">
+<div class="r2">
+<div class="r3">
+<div class="content">
+<div class="icon_wrapper">
+<div class="icon"></div>
+</div>
+Visitors</div>
+</div>
+</div>
+</div>
+</a></div>
+<div class="menu-item"><a
+	href="#"
+	onclick="#"
+	class="" id="traffic_sources_nav_item">
+<div class="r1">
+<div class="r2">
+<div class="r3">
+<div class="content">
+<div class="icon_wrapper">
+<div class="icon"></div>
+</div>
+Traffic Sources</div>
+</div>
+</div>
+</div>
+</a></div>
+<div class="menu-item"><a
+	href="#"
+	onclick="#"
+	class="" id="content_nav_item">
+<div class="r1">
+<div class="r2">
+<div class="r3">
+<div class="content">
+<div class="icon_wrapper">
+<div class="icon"></div>
+</div>
+Content</div>
+</div>
+</div>
+</div>
+</a></div>
+<div class="menu-item"><a
+	href="#"
+	onclick="#"
+	class="" id="goals_nav_item">
+<div class="r1">
+<div class="r2">
+<div class="r3">
+<div class="content">
+<div class="icon_wrapper">
+<div class="icon"></div>
+</div>
+Goals</div>
+</div>
+</div>
+</div>
+</a></div>
+</div>
+<b class="round_border"> <b class="round_border_layer1"></b> <b
+	class="round_border_layer2"></b> <b class="round_border_layer3"></b> </b>
+<div class="custom_reporting"><b class="round_border"> <b
+	class="round_border_layer3"></b> <b class="round_border_layer2"></b> <b
+	class="round_border_layer1"></b> </b>
+<div class="round_border_content">
+<div class="menu-item"><a href="#"
+	onclick="#"
+	class="custom_reporting_section" id="custom_report_nav_item">
+<div class="r1">
+<div class="r2">
+<div class="r3">
+<div class="content">
+<div class="icon_wrapper">
+<div class="icon"></div>
+</div>
+Custom Reporting</div>
+</div>
+</div>
+</div>
+</a>
+<div class="menu-list" id="custom_report_nav_item_items"
+	style="display: none">
+<div class="menu-item"><a
+	href="#"
+	onclick="#"
+	class="" id="manage_custom_reports">
+<div class="r1">
+<div class="r2">
+<div class="r3">
+<div class="content">
+<div class="icon_wrapper">
+<div class="icon"></div>
+</div>
+Manage Custom Reports</div>
+</div>
+</div>
+</div>
+</a></div>
+</div>
+</div>
+</div>
+<b class="round_border"> <b class="round_border_layer1"></b> <b
+	class="round_border_layer2"></b> <b class="round_border_layer3"></b> </b>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<div id="footer">
+<div id="global_footer_nav"><span>&copy; 2010 JYW</span><span class="last"><a target="GoogleHome"
+	href="#">sss</a></span></div>
+</div>
+</div>
+</body>
+</html>
